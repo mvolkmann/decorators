@@ -1,15 +1,3 @@
-export function timeFunction(fn: (...args: any[]) => any) {
-  if (typeof fn !== "function") {
-    throw new Error("This decorator can only be applied to a function.");
-  }
-  return function (...args: any[]) {
-    console.time(fn.name);
-    const result = fn.apply(this, args);
-    console.timeEnd(fn.name);
-    return result;
-  };
-}
-
 // The generic type T captures the type of the class being decorated.
 export function logInstanceCreation<T extends new (...args: any[]) => {}>(
   OriginalClass: T,
