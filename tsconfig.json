@@ -2,16 +2,6 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "bundler",
-    /* CRITICAL: Turn this OFF for Standard Stage 3 Decorators */
-    "experimentalDecorators": false,
-    "emitDecoratorMetadata": false,
-
-    /* Required for 'accessor' and property decorators to work correctly */
-    "useDefineForClassFields": true,
-
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "skipLibCheck": true,
     "strict": true
   }
 }
